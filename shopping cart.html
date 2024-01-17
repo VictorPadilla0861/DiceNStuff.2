@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="padding-top: 5%;">
+<header>
+    <nav class="navbar bg-body-tertiary fixed-top border">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="homepage.html">
+            <img src="images/logoplace.png" alt="logoplace" width="45" height="45" class="d-inline-block align-text-top"> Dice n' stuff
+          </a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Rocks" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Roll</button>
+          </form>
+        </div>
+      </nav>
+</header>
+
+<div class="container" style="padding-top: 5%;">
+    <h4>Billing Address</h4>
+    <form novalidate>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="first-name" class="form-check-label">First Name</label>
+            <input id="first-name" type="text"
+            class="form-control" 
+             placeholder="Victor" required>
+            <div class="invalid-feedback">
+                Valid first name is required.
+            </div>
+          
+            </div>    
+            <div class="col-md-6">
+        <label for="last-name" class="form-check-label">Last Name</label>
+        <input id="last-name" type="text"
+        class="form-control" 
+         placeholder="Padilla" required>
+        <div class="invalid-feedback">
+        Valid first name is required.
+        </div>
+            </div>
+        </div>
+    </form>
+
+            <div class="col-12">
+                <label for="email" class="form-check-label">Email</label>
+                <div class="input-group">
+                    <span class="input-group-text">@</span>
+               
+                    <input id="email" type="text"
+                    class="form-control" 
+                     placeholder="VPadilla" required>
+                    
+                </div>
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+            </div>   
+            <div class="col-md-5">
+                    <label for="country" 
+                    class="form-check-label">Country</label>
+                    <select id="country" 
+                    class="form-control">
+                        <option 
+                        value="">Please Select</option>                            <option 
+                        value="United States">United States
+                        </option>
+                        <option 
+                        value="Mexico">Mexico
+                        </option>
+                        <option 
+                        value="Canada">Canada
+                        </option>
+                    </select>
+                    <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+                <div class="row g-3">
+                <div class="col-4">
+                    <label for="state" 
+                        class="form-check-label">State</label>
+                        <select id="state" 
+                        class="form-control">
+                            <option 
+                            value="">Please Select</option>                            <option 
+                            value="United States">CA
+                            </option>
+                            <option 
+                            value="Mexico">OR
+                            </option>
+                            <option 
+                            value="Canada">NV
+                            </option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                    
+    
+                </div>
+                
+                <div class="col-4">
+                    <label for="zipcode" class="form-check-label">zipcode</label>
+                   
+                   
+                        <input id="zipcode" type="number"
+                        class="form-control" 
+                        placeholder="12345" required>
+                        
+                 
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                    
+               </div>
+               
+               
+            </div>
+            <hr class="my-2">
+            <div class="col-12">
+             <div class="form-check">
+             
+                 <input id="sameaddress"
+                 type="checkbox"
+                 class="form-check-input">
+                 <label class="form-check-label"
+                 for="sameaddress">same address as billing</label>
+             </div>
+            </div>
+             <div class="form-check">
+             
+                 <input id="safeinfo"
+                 type="checkbox"
+                 class="form-check-input">
+                 <label class="form-check-label"
+                 for="safeinfo">Remember Me</label>
+             </div>
+            </div>
+
+            <!--Cart-->
+               <div class="row g-3 ">
+               <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header py-3">
+                      <h5 class="mb-0">Cart - 3 items</h5>
+                    </div>
+                    <div class="card-body">
+                      <!-- Single item -->
+                      <div class="row">
+                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                          <!-- Image -->
+                          <div class="bg-image">
+                            <img src="images/dice1.jpg" class="w-100" alt="Blue Jeans Jacket">
+                            <a href="#!">
+                              <div></div>
+                            </a>
+                          </div>
+                          
+                        </div>
+        
+                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                          <!-- Data -->
+                          <p><strong>Cold Grip</strong></p>
+                          <p>Material: Resin</p>
+                          <p>Color: B</p>
+                        
+                          <!-- Data -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                          <!-- Quantity -->
+                          <div class="d-flex mb-4" style="max-width: 300px">
+                            <button class="btn btn- px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+        
+                            <div class="form-outline">
+                              <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control active">
+                              <label class="form-label" for="form1" style="margin-left: 0px;">Quantity</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 55.2px;"></div><div class="form-notch-trailing"></div></div></div>
+        
+                            <button class="btn btn- px-3 ms-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        
+        
+                          <!-- Price -->
+                          <p class="text-start text-md-center">
+                            <strong>$26.99</strong>
+                          </p>
+                         
+                        </div>
+                      </div>
+                     
+                      <hr class="my-4">
+
+                      <div class="row">
+                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                          <!-- Image -->
+                          <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                            <img src="images/dice6.jpg" class="w-100" alt="Blue Jeans Jacket">
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                          </div>
+                         
+                        </div>
+        
+                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                          <!-- Data -->
+                          <p><strong>Her Lady's Last Rites</strong></p>
+                          <p>Material: Metal</p>
+                          <p>Color: Bl</p>
+
+                          <!-- Data -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        
+                          <div class="d-flex mb-4" style="max-width: 300px">
+                            <button class="btn btn- px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+        
+                            <div class="form-outline">
+                              <input id="form2" min="0" name="quantity" value="1" type="number" class="form-control active">
+                              <label class="form-label" for="form1" style="margin-left: 0px;">Quantity</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 55.2px;"></div><div class="form-notch-trailing"></div></div></div>
+        
+                            <button class="btn btn- px-3 ms-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        
+        
+                          <!-- Price -->
+                          <p class="text-start text-md-center">
+                            <strong>$34.99</strong>
+                          </p>
+                         
+                        </div>
+                      </div>
+                      <!-- Single item -->
+        
+                      <hr class="my-4">
+        
+                      <!-- Single item -->
+                      <div class="row">
+                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                          <!-- Image -->
+                          <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                            <img src="images/dice3.jpg" class="w-100" alt="?"> 
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                            </a>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                          <!-- Data -->
+                          <p><strong>Three Goblins in a Trenchcoat</strong></p>
+                          <p>Material: Resin</p>
+                          <p>Color: Tr/Gr</p>
+                            <!-- Button -->
+                          <button type="button" class="btn btn- btn-sm me-1 mb-2" data-mdb-toggle="tooltip" aria-label="Remove item" data-mdb-original-title="Remove item">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          
+                          <!-- Data -->
+                        </div>
+        
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                          <!-- CLick down -->
+                          <div class="d-flex mb-4" style="max-width: 300px">
+                            <button class="btn btn- px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+                                <!-- Quantity -->
+                            <div class="form-outline">
+                              <input id="form3" min="0" name="quantity" value="1" type="number" class="form-control active">
+                              <label class="form-label" for="form1" style="margin-left: 0px;">Quantity</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 55.2px;"></div><div class="form-notch-trailing"></div></div></div>
+        
+                            <button class="btn btn- px-3 ms-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                       
+        
+                          <!-- Price -->
+                          <p class="text-start text-md-center">
+                            <strong>$26.99</strong>
+                          </p>
+                          <!-- Price -->
+                        </div>
+                      </div>
+            
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Payment</h4>
+    
+                    <div class="form-check">
+                        <input id="creditcard" type="radio" name="PaymentMethod"
+                    class="form-check-input" checked 
+                    required>
+                    <label for="creditcard">Credit/Debit Card</label>
+                    </div>
+    
+                    <div class="form-check">
+                        <input id="Paypal" type="radio" name="PaymentMethod"
+                    class="form-check-input" checked 
+                    required>
+                    <label for="Paypal">Paypal</label>
+                    </div>
+    
+                    <div class="row my-3 gy-3"></div>
+    
+                    <div class="row">
+                        <div class="col-md-6">
+                        <label for="fullName" class="form-label">
+                            Name on Card
+                        </label>
+                        <input id="fullName" type="text" 
+                        class="form-control">
+                        <small class="text-muted">
+                            Full name as displayed on card.
+                        </small>
+                            <div class="invalid-feedback">
+                                Name on card is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+    
+                        <label for="credit-card"
+                        class="form-label">
+                            Credit Card number
+                        </label>
+                        <input id="credit-card" type="text" class="form-control">
+                        <small class="text-muted">
+                             Full number on card.
+                        </small>
+                        
+    
+    
+                        </div>
+                        <div class="col-md-3">
+                            <label for="cc-expire" class="form-label">
+                                Expiration
+                            </label>
+                            <input id="cc-expire" type="text" 
+                            class="form-control">
+                            <div class="invalid-feedback">
+                                Expiration is required.
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cc-expire" class="form-label">
+                                    CVV
+                                </label>
+                                <input id="cc-expire2" type="text" 
+                                class="form-control">
+                                <div class="invalid-feedback">
+                                    CVV is required.
+                                </div>
+                                </div>
+                        </div>
+    
+                        <hr class="my-2">
+    
+                        <button class="btn btn-outline-success btn-lg btn-block">Checkout</button>
+                    </div>
+            </div>
+            </div>  
+            
+    
+
+
+   <!--javascript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

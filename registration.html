@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration</title>
+</head>
+
+<body style="background-color: azure; margin: auto; padding-top: 8%;">
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homepage.html">
+        <img src="images/logoplace.png" alt="logoplace" width="45" height="45" class="d-inline-block align-text-top"> Dice n' stuff
+      </a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Rocks" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Roll</button>
+      </form>
+    </div>
+  </nav>
+  <header>
+ 
+    <h2 class="border" style="text-align: center; font-style: oblique; background-color: ghostwhite;">
+      Register below to create your free account and start rolling!
+    </h2>
+  </header>
+
+    <div class="container">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <form>
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </form>
+          </div>
+          <div class="form-group col-md-6">
+            <form>
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+        </form>
+          </div>
+          <div class="form-group col-md-6">
+            <form>
+            <label for="inputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="inputPassword1" placeholder="Confirm Password" required>
+        </form>
+          </div>
+        </div>
+     
+        <div class="form-group">
+            <div class="form-group col-md-6">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-2">
+            <label for="inputCity1">City</label>
+            <input type="text" class="form-control" id="inputCity1">
+        </div>
+           
+            <div class="form-group col-md-2">
+            <label for="inputState">State</label>
+            <input type="text" class="form-control" id="inputState">
+            </div>
+  
+
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          
+          <p>
+          
+          <div class="container d-flex flex-column">
+
+            <div class="flex-container align-self-left">
+    
+            <div><b>How did you hear about us?</b></div>
+            
+    
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Friend/ Family
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Social Media
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Google/ Search Engine
+                </label>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                 Other <input id="flexRadioDefault2">
+                </label>
+              </div>
+            </div>
+            </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        </div>
+    
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              
+              I would like to recieve the weekly newsletter
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-sm .text-nowrap btn-outline-success">Register</button>
+
+
+        </div>
+    
+
+</html>

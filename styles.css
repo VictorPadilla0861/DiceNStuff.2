@@ -1,0 +1,30 @@
+*{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+  
+
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+
+}
+
+
+footer {
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.container-p-4-pb-0{
+    border-style: ridge;
+    padding-left: 50%;
+
+}
+
+.p2 {
+    display: flex;
+}
