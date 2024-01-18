@@ -1,0 +1,12 @@
+* {
+    color: white;
+}
+
+body {
+    background-image: url(/images/pexels-pixabay-326311.jpg);
+    background-size: cover;
+}
+
+p {
+    color: black;
+}
