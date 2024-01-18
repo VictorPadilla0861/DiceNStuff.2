@@ -23,10 +23,11 @@
 </header>
 
 <div class="container" style="padding-top: 5%;">
+  <h1 class="text-center">Checkout</h1>
     <h4>Billing Address</h4>
     <form novalidate>
         <div class="row g-3">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-2">
                 <label for="first-name" class="form-check-label">First Name</label>
             <input id="first-name" type="text" class="form-control" placeholder="Victor" required>
             <div class="invalid-feedback">
@@ -34,7 +35,7 @@
             </div>
           
             </div>    
-        <div class="col-md-6">
+        <div class="col-md-6 mb-2">
           <label for="last-name" class="form-check-label">Last Name</label>
           <input id="last-name" type="text" class="form-control" placeholder="Padilla" required>
         <div class="invalid-feedback">
@@ -44,7 +45,7 @@
         </div>
     </form>
 
-        <div class="col-12">
+        <div class="col-12 mb-2">
           <label for="email" class="form-check-label">Email</label>
           <div class="input-group">
           <span class="input-group-text">@</span> 
@@ -82,7 +83,7 @@
                 </div>
                 
                 <div class="col-4">
-                    <label for="zipcode" class="form-check-label">zipcode</label>
+                    <label for="zipcode" class="form-check-label">ZIP</label>
                         <input id="zipcode" type="number" class="form-control" placeholder="12345" required>
                     <div class="invalid-feedback">
                         Valid first name is required.
@@ -96,7 +97,7 @@
                  <label class="form-check-label" for="sameaddress">Same address as billing</label>
              </div>
             </div>
-             <div class="form-check">
+             <div class="form-check mb-2">
                  <input id="safeinfo" type="checkbox" class="form-check-input">
                  <label class="form-check-label" for="safeinfo">Remember Me</label>
              </div>
@@ -115,7 +116,7 @@
                         <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                           <!-- Image -->
                           <div class="bg-image">
-                            <img src="images/dice1.jpg" class="w-100" alt="Blue Jeans Jacket">
+                            <img src="images/dice1.jpg" class="w-100 rounded" alt="Blue Jeans Jacket">
                             <a href="#!">
                               <div></div>
                             </a>
@@ -163,7 +164,7 @@
                         <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                           <!-- Image -->
                           <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                            <img src="images/dice6.jpg" class="w-100" alt="Blue Jeans Jacket">
+                            <img src="images/dice6.jpg" class="w-100 rounded" alt="Blue Jeans Jacket">
                             <a href="#!">
                               <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                             </a>
@@ -213,7 +214,7 @@
                         <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                           <!-- Image -->
                           <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                            <img src="images/dice3.jpg" class="w-100" alt="?"> 
+                            <img src="images/dice3.jpg" class="w-100 rounded" alt="?"> 
                             <a href="#!">
                               <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                             </a>
@@ -278,7 +279,7 @@
                     required>
                     <label for="Paypal">Paypal</label>
                     </div>
-    
+                    <hr>
                     <div class="row my-3 gy-3"></div>
     
                     <div class="row">
@@ -299,7 +300,7 @@
     
                         <label for="credit-card"
                         class="form-label">
-                            Credit Card number
+                            Credit Card Number
                         </label>
                         <input id="credit-card" type="text" class="form-control">
                         <small class="text-muted">
@@ -331,7 +332,7 @@
                                 </div>
                         </div>
     
-                        <hr class="my-2">
+                        <hr class="my-4">
     
                         <button class="btn btn-outline-success btn-lg btn-block">Checkout</button>
                     </div>
