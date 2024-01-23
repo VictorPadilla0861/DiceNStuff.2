@@ -12,13 +12,6 @@ body{
 
 }
 
-
-footer {
-    margin-left: 5%;
-    margin-right: 5%;
-    
-}
-
 .container-p-4-pb-0{
     border-style: ridge;
     padding-left: 50%;
@@ -27,4 +20,29 @@ footer {
 
 .p2 {
     display: flex;
+}
+
+
+.navbar, footer{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 25%, rgb(8,90,45) 70%, rgba(166,128,70,0.7) 100%);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+#logoBrand{
+    font-family: "Lucida Console", "Courier New", monospace;
+    white-space: 100vw;
+    text-decoration: none;
+    color:#a68046;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#navDropdown { 
+    left: 0;
+}
+
+footer {
+    margin-left: 5%;
+    margin-right: 5%;
 }
