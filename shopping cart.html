@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/checkoutpage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body style="padding-top: 5%;">
+<body>
 <header>
     <nav class="navbar bg-body-tertiary fixed-top border">
         <div class="container-fluid">
@@ -23,9 +23,9 @@
       </nav>
 </header>
 
-<div id="checkout-container" class="container w-50" style="padding-top: 5%;">
-  <h1 class="text-center">Checkout</h1>
-    <h4>Billing Address</h4>
+<div id="checkout-container" class="container w-50">
+  <h1 class="text-center" style="font-weight: bold">Checkout</h1>
+    <h4 style="font-weight: bold">Billing Address</h4>
     <form novalidate>
         <div class="row g-3">
             <div class="col-md-6 mb-2">
@@ -114,7 +114,7 @@
                     <div class="card-body">
                       <!-- Single item -->
                       <div class="row">
-                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <div class="col-lg-4 col-md-12">
                           <!-- Image -->
                           <div class="bg-image">
                             <img src="images/dice1.jpg" class="w-100 rounded" alt="Blue Jeans Jacket">
@@ -125,7 +125,7 @@
                           
                         </div>
         
-                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                        <div class="col-lg-4 col-md-6">
                           <!-- Data -->
                           <p><strong>Cold Grip</strong></p>
                           <p>Material: Resin</p>
@@ -133,7 +133,7 @@
                         
                           <!-- Data -->
                         </div>
-                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="col-lg-4 col-md-6">
                           <!-- Quantity -->
                           <div class="d-flex mb-4" style="max-width: 300px">
                             <button class="btn btn- px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -162,7 +162,7 @@
                       <hr class="my-4">
 
                       <div class="row">
-                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                           <!-- Image -->
                           <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
                             <img src="images/dice6.jpg" class="w-100 rounded" alt="Blue Jeans Jacket">
@@ -173,7 +173,7 @@
                          
                         </div>
         
-                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                           <!-- Data -->
                           <p><strong>Her Lady's Last Rites</strong></p>
                           <p>Material: Metal</p>
@@ -212,7 +212,7 @@
         
                       <!-- Single item -->
                       <div class="row">
-                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                           <!-- Image -->
                           <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
                             <img src="images/dice3.jpg" class="w-100 rounded" alt="?"> 
@@ -222,7 +222,7 @@
                           </div>
                         </div>
         
-                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                           <!-- Data -->
                           <p><strong>Three Goblins in a Trenchcoat</strong></p>
                           <p>Material: Resin</p>
@@ -265,7 +265,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                    <h4 class="mb-3">Payment</h4>
+                    <h4 class="mb-3" style="font-weight: bold">Payment</h4>
     
                     <div class="form-check">
                         <input id="creditcard" type="radio" name="PaymentMethod"
