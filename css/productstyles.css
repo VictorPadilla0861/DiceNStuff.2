@@ -1,0 +1,10 @@
+.card {
+    background-image: url("https://us.canvasartrocks.com/cdn/shop/products/Wooden_texture_light_wood_Wall_Mural_Wallpaper_a_1400x.jpg?v=1571715189");
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    padding: 5%;
+    border-radius: 10%;
+
+}
