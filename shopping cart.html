@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/css/checkoutpage.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="images/homepage/icon.png">
 </head>
 <body>
 <!-- NAVBAR -->
@@ -52,7 +54,7 @@
   </nav>
 </header>
 
-<div id="checkout-container" class="container w-50">
+<div id="checkout-container" class="container w-75">
   <h1 class="text-center" style="font-weight: bold">Checkout</h1>
     <h4 style="font-weight: bold">Billing Address</h4>
     <form novalidate>
@@ -162,7 +164,7 @@
                         
                           <!-- Data -->
                         </div>
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-4 col-md-6">
                           <!-- Quantity -->
                           <div class="d-flex mb-4" style="max-width: 300px">
                             <button class="btn btn- px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -251,16 +253,11 @@
                           </div>
                         </div>
         
-                        <div class="col-lg-4 col-md-12 ">
+                        <div class="col-lg-4 col-md-12 checkout-box">
                           <!-- Data -->
                           <p><strong>Three Goblins in a Trenchcoat</strong></p>
                           <p>Material: Resin</p>
                           <p>Color: Tr/Gr</p>
-                            <!-- Button -->
-                          <button type="button" class="btn btn- btn-sm me-1 mb-2" data-mdb-toggle="tooltip" aria-label="Remove item" data-mdb-original-title="Remove item">
-                            <i class="fas fa-trash"></i>
-                          </button>
-                          
                           <!-- Data -->
                         </div>
         

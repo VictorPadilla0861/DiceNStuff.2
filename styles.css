@@ -1,12 +1,18 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
+    border: none;
+    outline: none;
 }
 
-
-body{
-    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+body {
+    background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -45,8 +51,42 @@ footer {
 #navDropdown { 
     left: 0;
 }
+.checkout-box .checkout-btn {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: .8rem;
+    text-align: center;
+    background-color: #1d6829;
+    color: white;
+}
+.checkout-btn {
+    font-weight: bold;
+    box-shadow: rgb(117, 195, 149) 0px 20px 30px -10px;
+}
+.checkout-box .checkout-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #124019;
+    z-index: -1;
+    transition: .5s;
+}
+
+.checkout-box .checkout-btn:hover::before {
+    width: 100%;
+    border-radius: .8rem;
+}
 
 footer {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+#logoBrandImg{
+   height: 65px !important;
 }

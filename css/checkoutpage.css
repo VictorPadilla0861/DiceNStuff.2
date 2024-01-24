@@ -1,5 +1,4 @@
 * {
-    color: black;
     font-family: "Lucida Console", "Courier New", monospace;
     margin: 0;
     padding: 0;
@@ -10,13 +9,9 @@
     outline: none;
 }
 
-main {
+body {
     background-image: url(/images/pexels-pixabay-326311.jpg);
     background-size: cover;
-}
-
-p {
-    color: black;
 }
 
 #checkout-container {
