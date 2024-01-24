@@ -12,6 +12,13 @@ body{
 
 }
 
+
+footer {
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
 .container-p-4-pb-0{
     border-style: ridge;
     padding-left: 50%;
