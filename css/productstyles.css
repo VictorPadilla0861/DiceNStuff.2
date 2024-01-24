@@ -3,6 +3,20 @@
     box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.5);
 }
 
+
+/* html {
+    background-image: url(/images/pexels-pixabay-326311.jpg);
+    background-size: cover;
+} */
+body {
+    background-image: url(/images/pexels-pixabay-326311.jpg);
+    background-size: cover;
+}
+
+.card{
+    margin-top: 10%;
+}
+
 img{
     padding: 5%;
     border-radius: 10%;
